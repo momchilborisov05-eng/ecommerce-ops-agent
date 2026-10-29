@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ops Agent · Northpeak Goods</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f46e5'/><path d='M9 17l5 5 9-12' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#4f46e5"/><path d="M9 17l5 5 9-12" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <div class="brand-name">Ops Agent</div>
+        <div class="brand-sub">Northpeak Goods</div>
+      </div>
+    </div>
+    <nav id="nav">
+      <a href="#/overview" data-page="overview"><span class="ico">◧</span>Overview</a>
+      <a href="#/runs" data-page="runs"><span class="ico">≡</span>Runs</a>
+      <a href="#/approvals" data-page="approvals"><span class="ico">✓</span>Approvals <span class="count" id="pending-count"></span></a>
+      <a href="#/integrations" data-page="integrations"><span class="ico">⇄</span>Integrations</a>
+      <a href="#/workflows" data-page="workflows"><span class="ico">⚙</span>Workflows</a>
+    </nav>
+    <div class="sidebar-foot" id="backends"></div>
+  </aside>
+  <main>
+    <header class="topbar">
+      <h1 id="page-title">Overview</h1>
+      <div class="topbar-right" id="mode"></div>
+    </header>
+    <div id="view" class="view"><div class="loading">Loading…</div></div>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
