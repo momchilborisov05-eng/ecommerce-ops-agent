@@ -223,6 +223,14 @@ The Northpeak Support Team
 
 ![Integrations](examples/screenshot-integrations.png)
 
+### Screenshots
+
+The dashboard uses a dark/light "modern SaaS" design with a theme toggle in the top bar (the choice is remembered; `/?theme=light` or `/?theme=dark` forces one), an animated step-by-step trace and approve/reject feedback. Animations use GSAP from a CDN; without it (or with reduced motion, or `?motion=off`) everything works the same. On phones the sidebar collapses into a menu.
+
+| Overview, light | Run trace, light | Phone (390 px) | Run trace, phone |
+|---|---|---|---|
+| ![Overview, light theme](examples/screenshot-overview-light.png) | ![Run trace, light theme](examples/screenshot-run-light.png) | ![Overview on a phone](examples/screenshot-mobile.png) | ![Run trace on a phone](examples/screenshot-mobile-run.png) |
+
 The dashboard is backed by a JSON API: `GET /api/overview`, `/api/runs`, `/api/runs/{id}`, `/api/approvals`, `/api/integrations`, `/api/workflows`, and `POST /api/workflows/{name}/run`, `/api/approvals/{id}/approve`, `/api/approvals/{id}/reject`. Interactive docs are at `/docs`.
 
 ## Tests
